@@ -1,0 +1,9 @@
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\bin\Debug\BecaDotNet.CrossCutting.dll
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\bin\Debug\BecaDotNet.CrossCutting.pdb
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\bin\Debug\BecaDotNet.Domain.dll
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\bin\Debug\BecaDotNet.Domain.pdb
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\obj\Debug\BecaDotNet.CrossCutting.csprojAssemblyReference.cache
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\obj\Debug\BecaDotNet.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\obj\Debug\BecaDotNet.CrossCutting.csproj.CopyComplete
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\obj\Debug\BecaDotNet.CrossCutting.dll
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.CrossCutting\obj\Debug\BecaDotNet.CrossCutting.pdb

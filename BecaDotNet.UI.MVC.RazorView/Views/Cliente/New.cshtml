@@ -1,0 +1,29 @@
+﻿@model BecaDotNet.Domain.Model.Cliente
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    Page.Title = "Cliente";
+}
+<div class="col-10 mx-auto shadow mt-4 p-5" style="border-radius: 10px; background-color:white">
+    <h2>Cliente</h2>
+
+    @using (Html.BeginForm("SaveCliente", "Cliente", FormMethod.Post, null))
+    {
+        @Html.TextBoxFor(m => m.Id, new { placeholder = "Id", required = true, @class = "form-control mb-3 bg-dark text-white d-none" })
+
+        @Html.LabelFor(m => m.Nome)
+        @Html.TextBoxFor(m => m.Nome, new { placeholder = "Nome", required = true, @class = "form-control mb-3 bg-dark text-white" })
+        @*@Html.ValidationMessageFor(m => m.NomeUser)*@
+
+        @Html.LabelFor(m => m.Cnpj)
+        @Html.TextBoxFor(m => m.Cnpj, new { placeholder = "CNPJ", required = true, @class = "form-control mb-3 bg-dark text-white" })
+        @*@Html.ValidationMessageFor(m => m.LoginUser)*@
+
+        @Html.LabelFor(m => m.Contato)
+        @Html.TextBoxFor(m => m.Contato, new { placeholder = "Contato", required = true, @class = "form-control mb-3 bg-dark text-white" })
+        @*@Html.ValidationMessageFor(m => m.PasswordUser)*@
+
+        <button id="btnCadastrar" class="btn col-md-6 btn-dark btn-block">Salvar</button>
+    }
+</div>
+

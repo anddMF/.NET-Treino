@@ -1,0 +1,46 @@
+﻿@model BecaDotNet.UI.MVC.RazorView.Models.ViewModel.UserViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    Page.Title = "User";
+}
+<div class="col-10 mx-auto shadow mt-4 p-5" style="border-radius: 10px; background-color:white">
+    <h2>@(!Model.IsEdit ? "Criar user" : $"Editar {Model.NomeUser}")</h2>
+
+    @using (Html.BeginForm("SaveUser", "User", FormMethod.Post, null))
+    {
+        if (Model.Id > 0)
+        {
+            //@Html.TextBoxFor(m => m.Id, new { placeholder = "id", required = true, @class = "form-control mb-3 bg-light text-white d-none" })
+            <Label>Projeto</Label>
+            @Html.DropDownListFor(m => m.ProjetoAtualId, Model.DdlProj, new { @class = "form-control mb-3 bg-dark text-white " })
+        }
+        @Html.TextBoxFor(m => m.Id, new { @class = "form-control mb-3 bg-dark text-white d-none" })
+        @Html.TextBoxFor(m => m.IsEdit, new { @class = "form-control mb-3 bg-dark text-white d-none" })
+
+        @Html.LabelFor(m => m.NomeUser)
+        @Html.TextBoxFor(m => m.NomeUser, new { placeholder = "Nome", required = true, @class = "form-control mb-3 bg-dark text-white" })
+
+        @*@Html.LabelFor(m => m.UserTypeId)*@
+        @Html.TextBoxFor(m => m.UserTypeId, new { required = true, placeholder = "", @class = "form-control mb-3 bg-dark border-0 d-none text-white" })
+
+        @Html.LabelFor(m => m.LoginUser)
+        @Html.TextBoxFor(m => m.LoginUser, new { placeholder = "Login", required = true, @class = "form-control mb-3 bg-dark text-white" })
+
+        @Html.LabelFor(m => m.PasswordUser)
+        @Html.TextBoxFor(m => m.PasswordUser, new { placeholder = "Password", required = true, @class = "form-control mb-3 bg-dark text-white" })
+
+        @Html.LabelFor(m => m.EmailUser)
+        @Html.TextBoxFor(m => m.EmailUser, new { placeholder = "Email", required = true, @class = "form-control mb-3 bg-dark text-white" })
+
+        <Label>Superior</Label>
+        @Html.DropDownListFor(m => m.IdSuperior, Model.DdlUser, new { @class = "form-control mb-3 bg-dark text-white " })
+
+        <button id="btnCadastrar" class="btn col-md-6 btn-dark btn-block">Salvar</button>
+    }
+</div>
+<script>
+    $('#exampleModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>

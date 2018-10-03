@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BecaDotNet.UI.MVC.RazorView.Models.ViewModel.UserViewModel>
+
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    Page.Title = "Adicionar";
+}
+
+<div class="col-10 mx-auto shadow mb-4 mt-4 p-5" style="border-radius: 10px; background-color:white">
+    <h2>Adicionar usuários</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Login</th>
+                <th scope="col">Email</th>
+                <th scope="col">Registro</th>
+                <th scope="col">Opções</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td name="lblId">@item.Id</td>
+                    <td name="lblNome">@item.NomeUser</td>
+                    <td name="lblLogin">@item.LoginUser</td>
+
+                    <td name="lblEmail">@item.EmailUser</td>
+                    <td>@item.GetEntity().RegisterDate</td>
+
+                    <td>@Html.ActionLink("Adicionar", "AdicionarUser", "User", new { userId = item.Id, projetoId = item.ProjetoAtualId }, new { @class = "btn btn-block btn-success" })</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+

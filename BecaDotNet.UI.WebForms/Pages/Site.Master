@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BecaDotNet.UI.WebForms.Pages.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <div class="row jumbotron">
+            <div class="col-8">
+                <h3>Master Page</h3>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="<%=ResolveClientUrl("~/Pages/Home.aspx")%>">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<%=ResolveClientUrl("~/Pages/UserList.aspx")%>">Listar Usuários</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<%=ResolveClientUrl("~/Pages/UserAccount.aspx")%>">Novo  Usuário</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-2">
+                <p>Olá, <b><%=AuthUser.Name %>  </b></p>
+            </div>
+            <div class="col-2">
+                <a href="#">Sair</a>
+            </div>
+        </div>
+        <div class="row">
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</body>
+</html>

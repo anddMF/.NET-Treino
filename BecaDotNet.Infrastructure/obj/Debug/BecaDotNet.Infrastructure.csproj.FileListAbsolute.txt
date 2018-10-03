@@ -1,0 +1,6 @@
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Infrastructure\bin\Debug\BecaDotNet.Infrastructure.dll
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Infrastructure\bin\Debug\BecaDotNet.Infrastructure.pdb
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Infrastructure\obj\Debug\BecaDotNet.Infrastructure.csprojAssemblyReference.cache
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Infrastructure\obj\Debug\BecaDotNet.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Infrastructure\obj\Debug\BecaDotNet.Infrastructure.dll
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Infrastructure\obj\Debug\BecaDotNet.Infrastructure.pdb

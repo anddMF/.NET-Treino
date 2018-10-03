@@ -1,0 +1,34 @@
+﻿@model BecaDotNet.UI.MVC.RazorView.Models.ViewModel.ProjetoViewModel
+
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="col-10 mx-auto shadow mt-4 p-5" style="border-radius: 10px; background-color:white">
+    <h2>New projeto</h2>
+
+    @using (Html.BeginForm("SaveProjeto", "Projeto", FormMethod.Post, null))
+    {
+        @Html.TextBoxFor(m => m.Id, new { placeholder = "Id", @class = "form-control mb-3 bg-dark text-white d-none" })
+
+        @Html.LabelFor(m => m.Nome)
+        @Html.TextBoxFor(m => m.Nome, new { placeholder = "Nome", required = true, @class = "form-control mb-3 bg-dark text-white" })
+        @*@Html.ValidationMessageFor(m => m.NomeUser)*@
+
+
+        //@Model.StartDate.ToString("dd/MM/yyyy")
+        <h5 class="text-muted">Data de início</h5>
+        @Html.TextBoxFor(m => m.DataInicio, new { @type = "date", required = true, @class = "form-control mb-3 bg-dark text-white" })
+
+        //@Model.DataFinal.ToString("dd/MM/yyyy")
+        <h5 class="text-muted">Prevsão de término</h5>
+        @Html.TextBoxFor(m => m.DataFinal, new { @type = "date", required = true, @class = "form-control mb-3 bg-dark text-white" })
+        
+        <Label>Cliente</Label>
+        @Html.DropDownListFor(m => m.ClienteId, Model.DdCliente, new { @class = "form-control mb-3 bg-dark text-white " })
+
+        <button id="btnCadastrar" class="btn col-md-6 btn-dark btn-block">Salvar</button>
+    }
+</div>
+

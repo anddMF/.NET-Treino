@@ -1,0 +1,6 @@
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Domain\bin\Debug\BecaDotNet.Domain.dll
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Domain\bin\Debug\BecaDotNet.Domain.pdb
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Domain\obj\Debug\BecaDotNet.Domain.csprojAssemblyReference.cache
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Domain\obj\Debug\BecaDotNet.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Domain\obj\Debug\BecaDotNet.Domain.dll
+C:\Projetos2\BecaNetV3\BecaNetV2\BecaDotNet.Domain\obj\Debug\BecaDotNet.Domain.pdb
